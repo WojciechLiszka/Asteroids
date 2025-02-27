@@ -43,7 +43,7 @@ def main():
         for ast in asteroids:
             for s_shoot in shots_group:
                 if ast.is_colided(s_shoot):
-                    ast.kill()
+                    ast.split()
                     s_shoot.kill()
         
         for ast in asteroids:
